@@ -6,12 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    
+    <!-- se escogio un linear layout para colocar los entradas de texto y botones
+          de manera vertical -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        
+        <!-- Este editText es para el ingreso del usuario y asi poder verificar en
+            la base de datos-->
         <EditText
             android:id="@+id/txt_usr"
             android:layout_width="match_parent"
@@ -20,6 +24,9 @@
             android:hint="usrername"
             android:inputType="textPersonName" />
 
+        <!-- Este editText es para el ingreso de la contrasenia a la cual
+            se encuentra asociado el usuario antes ingreado y asi poder verificar en
+            la base de datos-->
         <EditText
             android:id="@+id/txt_psw"
             android:layout_width="match_parent"
@@ -28,6 +35,9 @@
             android:hint="password"
             android:inputType="textPassword" />
 
+        <!-- boton que el presionarlo nos compara los datos ingresados
+            con los datos ingresados en la base de datos, dependiendo de ello
+            se hara el login o presentara un mensaje de alerta-->
         <Button
             android:id="@+id/btn_Init"
             android:layout_width="match_parent"
