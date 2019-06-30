@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- este xml contiene el menu con el cual se va a interactuar en la aplicacion-->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,6 +12,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!-- Boton que al presionarlo nos lleva a la vista
+            donde se puede verificar la temperatura-->
         <Button
             android:id="@+id/btnTemp"
             android:layout_width="match_parent"
@@ -18,6 +21,8 @@
             android:text="Temperatura"
             android:onClick="obtieneTemperatura"/>
 
+        <!-- Boton que al presionarlo nos lleva a la vista
+            donde se puede verificar la ruta que sigue el camion-->
         <Button
             android:id="@+id/btnRecorrido"
             android:layout_width="match_parent"
@@ -25,7 +30,7 @@
             android:text="Recorrido del Producto"
             android:onClick="ObtieneRecorrido"/>
 
-
+        <!-- Boton que al presionarlo nos cierra la sesion-->
         <Button
             android:id="@+id/btnSalir"
             android:layout_width="match_parent"
